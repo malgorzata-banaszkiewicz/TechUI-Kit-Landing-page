@@ -1,0 +1,30 @@
+.header {
+	border-bottom: rem(1) solid $color-concrete;
+	&__content {
+	}
+	&__home-link {
+	}
+	&__logo {
+		@include font(24, 28, 500, -0.36);
+		color: $color-black;
+		&--blue {
+			color: $color-dodger-blue;
+		}
+		@include media(">=md") {
+			@include font(40, 48, 700, -0.8);
+		}
+	}
+	&__nav {
+		@include font(18, 24, 600);
+		font-family: $font-inter;
+		color: $color-scorpion;
+	}
+	&__mobile-icons {
+		&--hamburger {
+		}
+		&--exit {
+		}
+	}
+	&__nav-link {
+	}
+}

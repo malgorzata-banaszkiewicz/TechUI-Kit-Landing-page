@@ -1,0 +1,13 @@
+.block-contact {
+	background-color: $color-wild-sand;
+	&__content {
+		color: $color-mine-shaft;
+		@include font(24, 36, 500);
+		@include media(">=md") {
+			font-size: rem(32);
+		}
+		@include media(">=xxl") {
+			@include font(40, 48, false, -0.8);
+		}
+	}
+}

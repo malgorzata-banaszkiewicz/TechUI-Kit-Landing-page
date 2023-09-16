@@ -1,0 +1,45 @@
+.main-footer {
+	background-color: $color-bay-of-many;
+	&__content {
+		color: $color-mercury;
+	}
+	@include media(">=lg") {
+	}
+	&__top {
+		border-bottom: rem(1) solid $color-cerulean-blue;
+	}
+	&__contact-details {
+		color: $color-alto;
+		@include font(14, 24, 400, 0.28);
+		@include media(">=md") {
+			font-size: rem(16);
+		}
+	}
+	&__home-link {
+	}
+	&__logo {
+		color: $color-white;
+		@include font(32, 36, 500, -0.48);
+		@include media(">=md") {
+			@include font(40, 48, 700, -0.8);
+		}
+	}
+	&__navigation {
+	}
+	&__nav-list {
+	}
+	&__nav-link {
+	}
+	&__bottom {
+		@include font(16, 24, 500);
+	}
+	&__copyrights {
+		font-weight: $font-weight-base;
+	}
+	&__social-icons {
+	}
+	&__social-icon {
+	}
+	&__icon-img {
+	}
+}

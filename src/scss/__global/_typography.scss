@@ -1,0 +1,32 @@
+h1 {
+	@include font(40, 48, 700, -0.8px);
+	@include media(">=md") {
+		@include font(53, 64, false, -1.04);
+	}
+	@include media(">=xxl") {
+		@include font(80, 96, false, -1.6);
+	}
+}
+h2 {
+	color: $color-mine-shaft;
+	@include font(36, 44, 700, -0.72);
+	@include media(">=md") {
+		@include font(40, 48, false, -0.8);
+	}
+	@include media(">=xxl") {
+		@include font(56, 64, false, -1.12);
+	}
+}
+h3 {
+	@include font(14, 24, 400, 0.28);
+	color: $color-tundora;
+}
+h4 {
+	@include font(18, 28, 400);
+}
+
+h5 {
+	text-transform: uppercase;
+	@include font(16, 24, 700, 0.32);
+	color: $color-mine-shaft;
+}

@@ -1,0 +1,27 @@
+.block-pricing {
+	&__content {
+	}
+	&__price-boxes {
+	}
+	&__price-box {
+		border: rem(1) solid $color-mercury;
+		margin-bottom: rem(40);
+		border-radius: rem(14);
+		@include font(16, 24, 400, 0.32);
+		&--top {
+			border-bottom: rem(1) solid $color-mercury;
+		}
+	}
+	&__price {
+		color: $color-mine-shaft;
+		@include font(40, 48, 700, -0.8);
+		@include media(">=xxl") {
+			@include font(56, 64, 700, -1.12);
+		}
+	}
+	&__features-list {
+	}
+	&__features-list-item::before {
+		content: url("../images/icons/check-circle.svg");
+	}
+}

@@ -1,0 +1,7 @@
+.subtitle {
+	@include font(20, 32, 500);
+	color: $color-bay-of-many;
+	&--gray {
+		color: $color-gray;
+	}
+}

@@ -1,0 +1,21 @@
+.block-testimonial {
+	background-color: $color-wild-sand;
+	&__content {
+	}
+	&__quotes {
+	}
+	&__quote-box {
+		background-color: $color-white;
+		margin-bottom: rem(32);
+		@include font(14, 24, 400, 0.28);
+		@include media(">=xxl") {
+			@include font(18, 28);
+		}
+	}
+	&__quote {
+		color: $color-mine-shaft;
+	}
+	&__author {
+		color: $color-tundora;
+	}
+}

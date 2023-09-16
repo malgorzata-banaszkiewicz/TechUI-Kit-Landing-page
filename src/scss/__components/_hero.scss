@@ -1,0 +1,24 @@
+.block-hero {
+	&__content {
+	}
+	&__text {
+	}
+	&__image {
+		max-width: rem(320);
+		display: block;
+		margin: 0 auto rem(30) auto;
+
+		@include media(">=lg") {
+			max-width: rem(520);
+		}
+	}
+
+	&__title {
+		text-transform: uppercase;
+		text-align: center;
+		color: $color-mine-shaft;
+		&--blue {
+			color: $color-bay-of-many;
+		}
+	}
+}

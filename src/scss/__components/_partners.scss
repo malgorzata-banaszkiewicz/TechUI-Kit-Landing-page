@@ -1,11 +1,47 @@
 .block-partners {
 	background-color: $color-wild-sand;
 	&__content {
+		padding: rem(64) 0 rem(53);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		@include media(">=lg") {
+			padding: rem(99) 0 rem(87);
+		}
 	}
 	&__logos {
+		display: flex;
+		flex-wrap: wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: rem(4);
+		width: 100%;
+		@include media(">=md") {
+			flex-direction: row;
+			justify-content: space-between;
+		}
 	}
 	&__logo {
+		height: rem(59);
+		width: fit-content;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		@include media(">xs") {
+			height: 100%;
+		}
+		border-top: rem(10) dotted transparent;
+		border-bottom: rem(10) dotted transparent;
+		transition: border-color $default-transition;
+		&:hover {
+			border-color: $color-white;
+		}
 	}
 	&__img {
+		height: 100%;
+		object-fit: cover;
 	}
 }

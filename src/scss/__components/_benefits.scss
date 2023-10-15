@@ -1,11 +1,86 @@
 .block-benefits {
+	$self: &;
+	@include media("<md") {
+		margin-top: rem(65);
+	}
 	&__content {
 		@include font(18, 28, 500);
-		@include media(">=xxl") {
+		@include media(">=lg") {
 			@include font(20, 32);
 		}
 	}
+	&__subtitle {
+		margin-bottom: rem(16);
+		@include media(">=md") {
+			margin-bottom: rem(16);
+		}
+		@include media(">=lg") {
+			margin-bottom: rem(18);
+		}
+	}
+	&__text {
+		letter-spacing: rem(0.8);
+		line-height: rem(32);
+		margin-bottom: rem(40);
+		@include media(">=md") {
+			max-width: 70%;
+			@include font(24, 36, 400, 0);
+			margin-bottom: rem(64);
+		}
+		@include media(">=lg") {
+			@include font(32, 48, 400, 0);
+			max-width: 60%;
+			margin-bottom: rem(93);
+		}
+	}
 	&__offer {
+		@include media(">=md") {
+			display: flex;
+			flex-wrap: wrap;
+			column-gap: 3.5%;
+			justify-content: space-evenly;
+		}
+		@include media(">=lg") {
+			column-gap: 3%;
+		}
+	}
+	&__benefit-wrapper {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		row-gap: rem(38);
+		height: 100%;
+
+		@include media(">=lg") {
+			grid-gap: rem(27);
+		}
+	}
+	&__benefit-title {
+		grid-row: 1 / 1;
+		grid-column: 1 / 1;
+		max-width: 82%;
+	}
+	&__visual-representation {
+		grid-row: 1 / 1;
+		grid-column: 2 / 2;
+		position: relative;
+		min-height: rem(109);
+		margin-left: auto;
+		@include media(">=lg") {
+			margin-left: rem(14);
+		}
+	}
+	&__img {
+		height: 100%;
+		object-fit: contain;
+	}
+	&__benefit-text {
+		grid-column: 1 / 3;
+		@include media(">=md") {
+			margin-top: auto;
+		}
+		@include media(">=lg") {
+			width: 80%;
+		}
 	}
 	&__benefit {
 		background-color: $color-wild-sand;
@@ -13,17 +88,60 @@
 		border: rem(1) solid $color-mercury;
 		margin-bottom: rem(32);
 		border-radius: rem(4);
+		padding: rem(24) rem(23) rem(23);
 		@include media(">=md") {
-			margin-bottom: rem(40);
+			margin-bottom: rem(39);
+			padding: rem(24) rem(22) rem(24) rem(23);
+			flex-basis: 48.25%;
+			max-width: 48.25%;
 		}
-		@include media(">=xxl") {
-			margin-bottom: rem(64);
+		@include media(">=lg") {
+			margin-bottom: rem(63);
+			padding: rem(31) rem(25) rem(32) rem(32);
 		}
 	}
-	&__visual-representation {
-	}
-	&__img {
-	}
-	&__description {
+	&__benefit--full-width {
+		margin-bottom: 0;
+		@include media(">=md") {
+			flex-basis: 100%;
+			max-width: 100%;
+			padding: rem(22) rem(23) rem(24) rem(23);
+		}
+		@include media(">=lg") {
+			padding: rem(32) rem(23) rem(32) rem(31);
+		}
+		#{$self}__benefit-wrapper {
+			row-gap: rem(26);
+			@include media(">=md") {
+				grid-template-columns: 54% 46%;
+				row-gap: rem(93);
+			}
+			@include media(">=lg") {
+				row-gap: rem(122);
+			}
+		}
+		#{$self}__benefit-text {
+			max-width: 92%;
+
+			@include media(">=md") {
+				grid-column: 1/2;
+				grid-row: 2/3;
+				width: 100%;
+			}
+		}
+
+		#{$self}__visual-representation {
+			min-height: unset;
+			@include media(">=md") {
+				grid-row: 1/3;
+				min-height: rem(120);
+				height: 70%;
+				margin: rem(29) 0 0 auto;
+			}
+			@include media(">=lg") {
+				height: 100%;
+				margin: rem(1) 0 0 rem(166);
+			}
+		}
 	}
 }

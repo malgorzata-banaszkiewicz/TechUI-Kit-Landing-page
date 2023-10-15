@@ -1,25 +1,25 @@
-import '../scss/app.scss';
+import "../scss/app.scss";
 
-import controller from './app/__init/controller';
+import controller from "./app/__init/controller";
 
 let handled = false;
 
 controller.init();
 
-window.addEventListener('load', () => {
+window.addEventListener("load", () => {
 	controller.loaded();
 });
 
-window.addEventListener('resize', () => {
-	controller.resized();
+window.addEventListener("resize", (e) => {
+	controller.resized(e);
 });
 
-window.addEventListener('scroll', e => {
+window.addEventListener("scroll", (e) => {
 	controller.scrolled(e);
 });
 
-window.addEventListener('keydown', e => {
-    controller.keyDown(e);
+window.addEventListener("keydown", (e) => {
+	controller.keyDown(e);
 });
 
 const handleMouseAndTouchEvents = (e) => {
@@ -33,5 +33,5 @@ const handleMouseAndTouchEvents = (e) => {
 	}
 };
 
-document.addEventListener('mouseup', handleMouseAndTouchEvents);
-document.addEventListener('touchend', handleMouseAndTouchEvents);
+document.addEventListener("mouseup", handleMouseAndTouchEvents);
+document.addEventListener("touchend", handleMouseAndTouchEvents);

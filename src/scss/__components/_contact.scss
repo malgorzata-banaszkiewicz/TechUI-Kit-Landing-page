@@ -1,13 +1,40 @@
 .block-contact {
 	background-color: $color-wild-sand;
+	padding: rem(66) 0 rem(63);
+	@include media(">=md") {
+		padding: rem(63) 0 rem(63);
+	}
+	@include media(">=lg") {
+		padding: rem(99) 0;
+	}
 	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	&__text {
+		display: inline-block;
+		margin-bottom: rem(24);
+		text-align: center;
 		color: $color-mine-shaft;
+		margin: 0 rem(17) rem(24) rem(18);
 		@include font(24, 36, 500);
 		@include media(">=md") {
 			font-size: rem(32);
+			max-width: 80%;
+			margin: 0 rem(18) rem(23);
 		}
-		@include media(">=xxl") {
+		@include media(">=lg") {
 			@include font(40, 48, false, -0.8);
+			margin-bottom: rem(24);
+		}
+	}
+	&__button {
+		margin-bottom: 0;
+		padding: rem(13) rem(20);
+		@include media(">=md") {
+			width: max-content;
 		}
 	}
 }

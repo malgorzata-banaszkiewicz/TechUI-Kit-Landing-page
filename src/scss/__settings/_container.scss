@@ -3,6 +3,10 @@
 	max-width: rem(716);
 	padding: 0 rem(16);
 	margin: 0 auto;
+	@include media("<xs") {
+		max-width: rem(375);
+		padding: 0 rem(10);
+	}
 
 	@include media(">=md") {
 		max-width: rem(960);

@@ -1,7 +1,7 @@
 h1 {
-	@include font(40, 48, 700, -0.8px);
+	@include font(40, 48, 700, -0.8);
 	@include media(">=md") {
-		@include font(53, 64, false, -1.04);
+		@include font(52, 64, false, 1.04);
 	}
 	@include media(">=xxl") {
 		@include font(80, 96, false, -1.6);
@@ -9,7 +9,8 @@ h1 {
 }
 h2 {
 	color: $color-mine-shaft;
-	@include font(36, 44, 700, -0.72);
+	margin-bottom: rem(12);
+	@include font(36, 44, 700, -0.9);
 	@include media(">=md") {
 		@include font(40, 48, false, -0.8);
 	}
@@ -23,10 +24,13 @@ h3 {
 }
 h4 {
 	@include font(18, 28, 400);
+	margin-bottom: rem(15);
+	letter-spacing: rem(0.1);
 }
 
 h5 {
 	text-transform: uppercase;
 	@include font(16, 24, 700, 0.32);
 	color: $color-mine-shaft;
+	margin-bottom: rem(24);
 }

@@ -1,7 +1,17 @@
 .subtitle {
 	@include font(20, 32, 500);
+	margin-bottom: rem(32);
 	color: $color-bay-of-many;
+
 	&--gray {
 		color: $color-gray;
+		margin-bottom: rem(20);
+
+		@include media(">=md") {
+			margin-bottom: rem(13);
+		}
+		@include media(">=lg") {
+			margin-bottom: rem(30);
+		}
 	}
 }

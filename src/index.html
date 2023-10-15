@@ -14,75 +14,114 @@
 					<a
 						href="/"
 						target="_self"
-						class="header__home-link"
 						><p class="header__logo">
 							<span class="header__logo--blue">TechUI</span> Kit
 						</p></a
 					>
-					<nav class="header__nav">
-						<div class="header__mobile-icons">
-							<img
-								src="./images/icons/menu-01.svg"
-								alt="menu"
-								class="header__mobile-icons--hamburger" />
-							<img
-								src="./images/icons/close_icon_black2.svg"
-								alt="close"
-								class="header__mobile-icons--exit" />
-						</div>
-						<a
-							href="#"
-							class="header__nav-link"
-							>Benefits</a
-						>
-						<a
-							href="#"
-							class="header__nav-link"
-							>Features</a
-						>
-						<a
-							href="#"
-							class="header__nav-link"
-							>Testimonial</a
-						>
-						<a
-							href="#"
-							class="header__nav-link"
-							>Pricing</a
-						>
-						<a
-							href="#"
-							class="header__nav-link"
-							>FAQ</a
-						>
-					</nav>
-					<button class="button">Get Started</button>
+					<div class="header__mobile-btn">
+						<button class="header__btn-hamburger">
+							<span></span>
+							<span></span>
+							<span></span>
+						</button>
+					</div>
+					<div class="header__nav">
+						<nav class="header__nav-menu">
+							<ul class="header__nav-list">
+								<li>
+									<a
+										href="#"
+										target="_self"
+										class="header__nav-link"
+										>Benefits</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										target="_self"
+										class="header__nav-link"
+										>Features</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										target="_self"
+										class="header__nav-link"
+										>Testimonial</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										target="_self"
+										class="header__nav-link"
+										>Pricing</a
+									>
+								</li>
+								<li>
+									<a
+										href="#"
+										target="_self"
+										class="header__nav-link"
+										>FAQ</a
+									>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<a
+						href="#"
+						target="_self"
+						class="button header__button"
+						>Get Started</a
+					>
 				</div>
 			</div>
 		</header>
 		<main>
-			<section class="block block-hero">
+			<section class="block-hero">
 				<div class="container">
 					<div class="block-hero__content">
-						<h1 class="block-hero__title">
-							Transform Your Business with<span class="block-hero__title--blue">
-								Innovative Tech Solutions</span
+						<div class="block-hero__left">
+							<h1 class="block-hero__title">
+								Transform Your Business with<span
+									class="block-hero__title--blue">
+									Innovative Tech Solutions</span
+								>
+							</h1>
+							<p class="block-hero__text">
+								Streamline Your Processes, Increase Productivity, and Grow Your
+								Revenue
+							</p>
+							<a
+								href="#"
+								target="_self"
+								class="button block-hero__button"
+								>Get Started</a
 							>
-						</h1>
-						<p class="block-hero__text">
-							Streamline Your Processes, Increase Productivity, and Grow Your
-							Revenue
-						</p>
-						<div class="button"></div>
-						<figure class="block-hero__image">
-							<img
-								src="images/home/building.jpg"
-								alt="business glass building with a smile in one window" />
+						</div>
+						<figure class="block-hero__right">
+							<picture class="block-hero__image">
+								<source
+									srcset="images/home/building.jpg"
+									media="(max-width: 767px)" />
+								<source
+									srcset="images/home/bulding-tablet.png"
+									media="(max-width: 1439px)" />
+								<source
+									srcset="images/home/building-desktop.png"
+									media="(max-width: 2000px)" />
+								<img
+									src="images/home/building.jpg"
+									alt="business glass building with a smile in one window" />
+							</picture>
 						</figure>
 					</div>
 				</div>
 			</section>
-			<section class="block block-partners">
+			<section class="block-partners">
 				<div class="container">
 					<div class="block-partners__content">
 						<p class="subtitle subtitle--gray">BUSINESS PARTNERS</p>
@@ -144,51 +183,64 @@
 			<section class="block block-benefits">
 				<div class="container">
 					<div class="block-benefits__content">
-						<p class="subtitle">BENEFITS</p>
+						<p class="subtitle block-benefits__subtitle">BENEFITS</p>
 						<h2>Our Tech Solutions</h2>
-						<p>
+						<p class="block-benefits__text">
 							Expertise and Support for Seamless Tech Integration and
 							Uninterrupted Operations.
 						</p>
 						<div class="block-benefits__offer">
 							<article class="block-benefits__benefit">
-								<h3>Comprehensive Tech Solutions for Your Business</h3>
-								<figure class="block-benefits__visual-representation">
-									<img
-										class="block-benefits__img"
-										src="./images/icons/engineering_team.svg"
-										alt="engineering team" />
-								</figure>
-								<p class="block-benefits__description">
-									We deliver comprehensive tech solutions tailored to your
-									business needs, on time and within budget.
-								</p>
+								<div class="block-benefits__benefit-wrapper">
+									<h3 class="block-benefits__benefit-title">
+										Comprehensive Tech Solutions for Your Business
+									</h3>
+									<figure class="block-benefits__visual-representation">
+										<img
+											class="block-benefits__img"
+											src="./images/icons/engineering_team.svg"
+											alt="engineering team" />
+									</figure>
+									<p class="block-benefits__benefit-text">
+										We deliver comprehensive tech solutions tailored to your
+										business needs, on time and within budget.
+									</p>
+								</div>
 							</article>
 							<article class="block-benefits__benefit">
-								<h3>Proven Expertise in Cutting-Edge Technologies</h3>
-								<figure class="block-benefits__visual-representation">
-									<img
-										class="block-benefits__img"
-										src="./images/icons/teaching.svg"
-										alt="teacher with the white board" />
-								</figure>
-								<p class="block-benefits__description">
-									We use our proven expertise in cutting-edge technologies to
-									help you achieve your business goals.
-								</p>
+								<div class="block-benefits__benefit-wrapper">
+									<h3 class="block-benefits__benefit-title">
+										Proven Expertise in Cutting-Edge Technologies
+									</h3>
+									<figure class="block-benefits__visual-representation">
+										<img
+											class="block-benefits__img"
+											src="./images/icons/teaching.svg"
+											alt="teacher with the white board" />
+									</figure>
+									<p class="block-benefits__benefit-text">
+										We use our proven expertise in cutting-edge technologies to
+										help you achieve your business goals.
+									</p>
+								</div>
 							</article>
-							<article class="block-benefits__benefit">
-								<h3>Accessible and Responsive Support</h3>
-								<figure class="block-benefits__visual-representation">
-									<img
-										class="block-benefits__img"
-										src="./images/icons/online_learning.svg"
-										alt="online learning" />
-								</figure>
-								<p class="block-benefits__description">
-									We provide accessible and responsive support 24/7 to ensure
-									your satisfaction with our tech solutions.
-								</p>
+							<article
+								class="block-benefits__benefit block-benefits__benefit--full-width">
+								<div class="block-benefits__benefit-wrapper">
+									<h3 class="block-benefits__benefit-title">
+										Accessible and Responsive Support
+									</h3>
+									<figure class="block-benefits__visual-representation">
+										<img
+											class="block-benefits__img"
+											src="./images/icons/online_learning.svg"
+											alt="online learning" />
+									</figure>
+									<p class="block-benefits__benefit-text">
+										We provide accessible and responsive support 24/7 to ensure
+										your satisfaction with our tech solutions.
+									</p>
+								</div>
 							</article>
 						</div>
 					</div>
@@ -197,8 +249,10 @@
 			<section class="block block-testimonial">
 				<div class="container">
 					<div class="block-testimonial__content">
-						<p class="subtitle">TESTIMONIAL</p>
-						<h2>Testimonials from Our Satisfied Customers</h2>
+						<p class="subtitle block-testimonial__subtitle">TESTIMONIAL</p>
+						<h2 class="block-testimonial__title">
+							Testimonials from Our Satisfied Customers
+						</h2>
 						<div class="block-testimonial__quotes">
 							<article class="block-testimonial__quote-box">
 								<blockquote class="block-testimonial__quote">
@@ -244,19 +298,34 @@
 			<section class="block block-pricing">
 				<div class="container">
 					<div class="block-pricing__content">
-						<p class="subtitle">PRICING</p>
-						<h2>Choose the Perfect Plan for Your Business Needs</h2>
+						<p class="subtitle block-pricing__subtitle">PRICING</p>
+						<h2 class="block-pricing__title">
+							Choose the Perfect Plan for Your Business Needs
+						</h2>
 						<div class="block-pricing__price-boxes">
 							<article class="block-pricing__price-box">
-								<div class="block-pricing__price-box--top">
+								<div class="block-pricing__price-box-top">
 									<h4>Basic plan</h4>
-									<p><span class="block-pricing__price">$99</span>per month</p>
-									<p>Ideal for small businesses and startups</p>
-									<button class="button">Get started</button>
+									<p class="block-pricing__price-value">
+										<span>$99</span>
+										<span
+											class="block-pricing__price-value-text block-pricing__price-value-text--smaller-spacing"
+											>per month</span
+										>
+									</p>
+									<p class="block-pricing__summary">
+										Ideal for small businesses and startups
+									</p>
+									<a
+										href="#"
+										target="_self"
+										class="button block-pricing__button"
+										>Get started</a
+									>
 								</div>
-								<div>
+								<div class="block-pricing__features-box">
 									<h5>FEATURES</h5>
-									<ul class="block-pricing__features-list">
+									<ul>
 										<li class="block-pricing__features-list-item">
 											Comprehensive tech solutions
 										</li>
@@ -270,15 +339,27 @@
 								</div>
 							</article>
 							<article class="block-pricing__price-box">
-								<div class="block-pricing__price-box--top">
+								<div class="block-pricing__price-box-top">
 									<h4>Premium plan</h4>
-									<p><span class="block-pricing__price">$149</span>per month</p>
-									<p>Ideal for medium-sized businesses and enterprises</p>
-									<button class="button">Get started</button>
+									<p class="block-pricing__price-value">
+										<span>$149</span>
+										<span class="block-pricing__price-value-text"
+											>per month</span
+										>
+									</p>
+									<p class="block-pricing__summary">
+										Ideal for medium-sized businesses and enterprises
+									</p>
+									<a
+										href="#"
+										target="_self"
+										class="button block-pricing__button"
+										>Get started</a
+									>
 								</div>
-								<div>
+								<div class="block-pricing__features-box">
 									<h5>FEATURES</h5>
-									<ul class="block-pricing__features-list">
+									<ul>
 										<li class="block-pricing__features-list-item">
 											Dedicated account manager
 										</li>
@@ -292,15 +373,27 @@
 								</div>
 							</article>
 							<article class="block-pricing__price-box">
-								<div class="block-pricing__price-box--top">
+								<div class="block-pricing__price-box-top">
 									<h4>Enterprise plan</h4>
-									<p><span class="block-pricing__price">$199</span>per month</p>
-									<p>Ideal for large enterprises with complex needs</p>
-									<button class="button">Get started</button>
+									<p class="block-pricing__price-value">
+										<span>$199</span>
+										<span class="block-pricing__price-value-text"
+											>per month</span
+										>
+									</p>
+									<p class="block-pricing__summary">
+										Ideal for large enterprises with complex needs
+									</p>
+									<a
+										href="#"
+										target="_self"
+										class="button block-pricing__button"
+										>Get started</a
+									>
 								</div>
-								<div>
+								<div class="block-pricing__features-box">
 									<h5>FEATURES</h5>
-									<ul class="block-pricing__features-list">
+									<ul>
 										<li class="block-pricing__features-list-item">
 											Dedicated team of experts
 										</li>
@@ -315,14 +408,19 @@
 					</div>
 				</div>
 			</section>
-			<section class="block block-contact">
+			<section class="block-contact">
 				<div class="container">
 					<div class="block-contact__content">
-						<p>
+						<p class="block-contact__text">
 							Learn more about our technology solutions and how we can help your
 							business succeed.
 						</p>
-						<button class="button">Contact Us</button>
+						<a
+							href="#"
+							target="_self"
+							class="button block-contact__button"
+							>Contact us</a
+						>
 					</div>
 				</div>
 			</section>
@@ -338,8 +436,11 @@
 								class="main-footer__home-link"
 								><p class="main-footer__logo">TechUI Kit</p></a
 							>
-							<a href="mailto:techuikit@techbusiness.io"></a
-							>techuikit@techbusiness.io
+							<a
+								href="mailto:techuikit@techbusiness.io"
+								class="main-footer__email"
+								>techuikit@techbusiness.io</a
+							>
 						</address>
 						<nav class="main-footer__navigation">
 							<ul class="main-footer__nav-list">
@@ -391,42 +492,66 @@
 							Copyright © 2023 TechUI Kit Business, All rights reserved.
 						</p>
 						<div class="main-footer__social-icons">
-							<figure class="main-footer__social-icon">
-								<img
-									class="main-footer__icon-img"
-									src="./images/icons/twitter-grey.svg"
-									alt="twitter logo" />
-							</figure>
-							<figure class="main-footer__social-icon">
-								<img
-									class="main-footer__icon-img"
-									src="./images/icons/linkedin-grey.svg"
-									alt="linkedin logo" />
-							</figure>
-							<figure class="main-footer__social-icon">
-								<img
-									class="main-footer__icon-img"
-									src="./images/icons/facebook-grey.svg"
-									alt="facebook logo" />
-							</figure>
-							<figure class="main-footer__social-icon">
-								<img
-									class="main-footer__icon-img"
-									src="./images/icons/github-grey.svg"
-									alt="github logo" />
-							</figure>
-							<figure class="main-footer__social-icon">
-								<img
-									class="main-footer__icon-img"
-									src="./images/icons/angel-list.svg"
-									alt="AngelList logo" />
-							</figure>
-							<figure class="main-footer__social-icon">
-								<img
-									class="main-footer__icon-img"
-									src="./images/icons/dribbble.svg"
-									alt="Dribbble logo" />
-							</figure>
+							<a
+								href="#"
+								target="_blank"
+								rel="noopener"
+								class="main-footer__icon-link"
+								><figure class="main-footer__social-icon">
+									<img
+										src="./images/icons/twitter-grey.svg"
+										alt="twitter logo" /></figure
+							></a>
+							<a
+								href="#"
+								target="_blank"
+								rel="noopener"
+								class="main-footer__icon-link"
+								><figure class="main-footer__social-icon">
+									<img
+										src="./images/icons/linkedin-grey.svg"
+										alt="linkedin logo" /></figure
+							></a>
+							<a
+								href="#"
+								target="_blank"
+								rel="noopener"
+								class="main-footer__icon-link"
+								><figure class="main-footer__social-icon">
+									<img
+										src="./images/icons/facebook-grey.svg"
+										alt="facebook logo" /></figure
+							></a>
+							<a
+								href="#"
+								target="_blank"
+								rel="noopener"
+								class="main-footer__icon-link"
+								><figure class="main-footer__social-icon">
+									<img
+										src="./images/icons/github-grey.svg"
+										alt="github logo" /></figure
+							></a>
+							<a
+								href="#"
+								target="_blank"
+								rel="noopener"
+								class="main-footer__icon-link"
+								><figure class="main-footer__social-icon">
+									<img
+										src="./images/icons/angel-list.svg"
+										alt="AngelList logo" /></figure
+							></a>
+							<a
+								href="#"
+								target="_blank"
+								rel="noopener"
+								class="main-footer__icon-link"
+								><figure class="main-footer__social-icon">
+									<img
+										src="./images/icons/dribbble.svg"
+										alt="Dribbble logo" /></figure
+							></a>
 						</div>
 					</div>
 				</div>

@@ -1,6 +1,8 @@
 .block {
-	margin: rem(64) 0;
-
+	margin: rem(62) 0 rem(65) 0;
+	@include media(">=md") {
+		margin-top: rem(64);
+	}
 	@include media(">=lg") {
 		margin: rem(100) 0;
 	}
